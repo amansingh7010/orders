@@ -1,1 +1,1 @@
-A microservice to create and manage orders.
+A microservice to create and manage orders for tickets.
