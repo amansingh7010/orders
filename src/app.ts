@@ -7,7 +7,7 @@ import { currentUser, errorHandler, NotFoundError } from '@asinghs/common';
 import { newOrderRouter } from './routes/new';
 import { showOrderRouter } from './routes/show';
 import { indexOrderRouter } from './routes';
-import { deleteOrderRouter } from './routes/delete';
+import { cancelOrderRouter } from './routes/cancel';
 
 const app = express();
 app.set('trust proxy', true);
@@ -24,7 +24,7 @@ app.use(currentUser);
 app.use(newOrderRouter);
 app.use(showOrderRouter);
 app.use(indexOrderRouter);
-app.use(deleteOrderRouter);
+app.use(cancelOrderRouter);
 
 app.all('*', () => {
   throw new NotFoundError();
