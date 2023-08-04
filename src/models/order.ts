@@ -3,6 +3,8 @@ import { OrderStatus } from '@asinghs/common';
 
 import { TicketDoc } from './ticket';
 
+export { OrderStatus };
+
 // Interface that describes the properties
 // required to create a new Order
 interface OrderAttrs {
